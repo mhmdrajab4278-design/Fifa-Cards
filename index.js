@@ -104,6 +104,24 @@ const pro_strength = document.getElementById("pro-strength");
 const aggression = document.getElementById("aggression-value");
 const pro_aggression = document.getElementById("pro-aggression");
 
+function setcolor(stat, value){
+    if (stat >= 90){
+        value.style.backgroundColor = "dodgerblue"
+    }
+    else if (stat >= 80){
+        value.style.backgroundColor = "lime"
+    }
+    else if (stat >= 70){
+        value.style.backgroundColor = "yellow"
+    }
+    else if (stat >= 60){
+        value.style.backgroundColor = "orange"
+    }
+    else{
+        value.style.backgroundColor = "red"
+    }
+}
+
 
 async function getdata() {
     try{
@@ -126,7 +144,15 @@ async function getdata() {
         weight.textContent = player.Weight;
         skills.textContent = player["Skill moves"];
         position.textContent = player.Position;
-        alt_position.textContent = player["Alternative positions"].replace("[", "").replace("]", "").replaceAll("'", "");
+        if(!player["Alternative positions"]){
+            alt_position.textContent = "Just Primary";
+        }
+        else{
+            alt_position.textContent = player["Alternative positions"].replace("[", "").replace("]", "").replaceAll("'", "");
+        }
+ 
+
+
         pace.textContent = player.PAC;
         shooting.textContent = player.SHO;
         passing.textContent = player.PAS;
@@ -135,6 +161,8 @@ async function getdata() {
         physicality.textContent = player.PHY;
         acceleration.textContent = player.Acceleration;
         pro_acceleration.style.width = `${player.Acceleration}%`;
+
+
         sprint.textContent = player["Sprint Speed"];
         pro_sprint.style.width = `${player["Sprint Speed"]}%`;
         positioning.textContent = player.Positioning;
@@ -220,6 +248,44 @@ async function getdata() {
 
         aggression.textContent = player.Aggression;
         pro_aggression.style.width = `${player.Aggression}%`;
+
+        setcolor(player.Acceleration, pro_acceleration);
+        setcolor(player["Sprint Speed"], pro_sprint);
+        setcolor(player.Positioning, pro_positioning);
+        setcolor(player.Finishing, pro_finishing);
+        setcolor(player["Shot Power"], pro_shot);
+        setcolor(player["Long Shots"], pro_long_shots);
+        setcolor(player.Volleys, pro_vollys);
+        setcolor(player.Penalties, pro_penalties);
+
+        setcolor(player.Vision, pro_vision);
+        setcolor(player.Crossing, pro_crossing);
+        setcolor(player["Free Kick Accuracy"], pro_free_kick);
+        setcolor(player["Short Passing"], pro_short_passing);
+        setcolor(player["Long Passing"], pro_long_passing);
+        setcolor(player.Curve, pro_curve);
+
+        setcolor(player.Agility, pro_agility);
+        setcolor(player.Balance, pro_balance);
+        setcolor(player.Reactions, pro_reactions);
+        setcolor(player["Ball Control"], pro_controll);
+        setcolor(player.Dribbling, pro_dribbling_stat);
+        setcolor(player.Composure, pro_composure);
+
+        setcolor(player.Interceptions, pro_interceptions);
+        setcolor(player["Heading Accuracy"], pro_heading);
+        setcolor(player["Def Awareness"], pro_def);
+        setcolor(player["Standing Tackle"], pro_standing_tackle);
+        setcolor(player["Sliding Tackle"], pro_sliding_tackle);
+
+        setcolor(player.Jumping, pro_jumping);
+        setcolor(player.Stamina, pro_stamina);
+        setcolor(player.Strength, pro_strength);
+        setcolor(player.Aggression, pro_aggression);
+
+
+
+
 
     }
     catch(error){
