@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+    <body>
+        <header id="header">
+            
+            <div id="search-box">
+                <input type="text" id="input" placeholder="Enter a player name:">
+                <i class="fa-brands fa-sistrix"></i>
+            </div>
+            <button id="submit">Search</button>
+        </header> 
+        <div id="card">
+            
+            <div id="player-pic"><img id="player-img" src="238794_en.webp"></div>
+            <h1 id="Player-name">Vini Jr.</h1>
+            <div id="Player-info-card" class="card">
+                 
+                <div class="cont-1">
+                    <p id="height">Height: </p>
+                    <div id="height-value">00</div>
+                </div>
+
+                <div class="cont-1">
+                    <p id="preferred-foot">Preferred Foot: </p>
+                    <div id="preferred-value">00</div>
+                </div>
+                
+                <div class="cont-1">
+                    <p id="weak foot">Weak Foot: </p>
+                    <div id="weak-value">00</div>
+                </div>
+                
+                <div class="cont-1">
+                    <p id="weight">Weight: </p>
+                    <div id="weight-value">00</div>
+                </div>
+                
+                <div class="cont-1">
+                    <p id="skill-moves">Skill Moves: </p>
+                    <div id="skill-value">00</div>
+                </div>
+                
+                <div class="cont-1">
+                    <p id="position">Position: </p>
+                    <div id="position-value">00</div>
+                </div>
+                
+                <div class="cont-1">
+                    <p id="alt-position">Alternative Position: </p>
+                    <div id="alt-value">00</div>
+                </div>
+                
+
+            </div>
+            <div id="game-stats-card">
+                <div id="pace-card" class="card">
+                    <div class="cont">
+                        <h2 id="pace">Pace</h2>
+                        <h2 id="pace-value">00</h2>
+                    </div>
+                    
+                    <div class="cont">
+                        <p id="acceleration">Acceleration</p>
+                        <p id="acceleration-value">00</p>
+                    </div>
+                    <div id="progress-bar-acceleration" class="progress-bar">
+                        <div id="pro-acceleration" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="sprint">Sprint Speed</p>
+                        <p id="sprint-value">00</p>
+                    </div>
+                    
+                    <div id="progress-bar-sprint" class="progress-bar">
+                        <div id="pro-sprint" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                </div>
+                
+                <div id="shooting-card" class="card">
+                    <div class="cont">
+                        <h2 id="shooting">Shooting</h2>
+                        <h2 id="shooting-value">00</h2>
+                    </div>  
+                    <div class="cont">
+                        <p id="positioning">Positioning</p>
+                        <p id="positioning-value">00</p>
+                    </div>
+                    <div  class="progress-bar" >
+                        <div id="pro-positioning" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="finishing">Finishing</p>
+                        <p id="finishing-value">00</p>
+                    </div>
+
+                    <div  class="progress-bar" >
+                        <div id="pro-finishing" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="shot Power">Shot Power</p>
+                        <p id="shot-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-shot" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="long-Shots">Long Shots</p>
+                        <p id="long-shots-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-l-shot" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="volleys">Volleys</p>
+                        <p id="volleys-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-volleys" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="penalties">Penalties</p>
+                        <p id="penalties-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-penalties" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                </div>
+
+                <div id="passing-card" class="card" >
+                    <div class="cont">
+                        <h2 id="passing">Passing</h2>
+                        <h2 id="passing-value">00</h2>
+                    </div>
+                    <div class="cont">
+                        <p id="vision">Vision</p>
+                        <p id="vision-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-vision" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="crossing">Crossing</p>
+                        <p id="crossing-value">00</p>
+                    </div>                
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-crossing" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="free kick">Free Kick Accuracy</p>
+                        <p id="free-kick-value">00</p>
+                    </div>      
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-free-kick" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="short-passing">Short Passing</p>
+                        <p id="short-passing-value">00</p>
+                    </div>   
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-short-passing" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="long-passing">Long Passing</p>
+                        <p id="long-passing-value">00</p>
+                    </div>   
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-long-passing" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="Curve">Curve</p>
+                        <p id="curve-value">00</p>
+                    </div>   
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-curve" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                </div>
+
+
+                <div id="Dribbling-card" class="card">
+                    <div class="cont">
+                        <h2 id="dribbling-stat">Dribbling</h2>
+                        <h2 id="dribbling-value">00</h2>
+                    </div>
+                    <div class="cont">
+                        <p id="agility">Agility</p>
+                        <p id="agility-value">00</p>
+                    </div>   
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-agility" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="balance">Balance</p>
+                        <p id="balance-value">00</p>
+                    </div>   
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-balance" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+
+                    <div class="cont">
+                        <p id="reactions">Reactions</p>
+                        <p id="reactions-value">00</p>
+                    </div>   
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-reactions" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="ball-Control">Ball Control</p>
+                        <p id="ball-control-value">00</p>
+                    </div>   
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-control" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="dribbling">Dribbling</p>
+                        <p id="dribbling-stat-value">00</p>
+                    </div>   
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-dribbling" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="composure">Composure</p>
+                        <p id="composure-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-composure" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                </div>
+
+                <div id="Defending-card" class="card" >
+                    <div class="cont">
+                        <h2 id="defending">Defending</h2>
+                        <h2 id="defending-value">00</h2>
+                    </div>
+
+                    <div class="cont">
+                        <p id="interceptions">Interceptions</p>
+                        <p id="interceptions-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-interceptions" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="heading">Heading Accuracy</p>
+                        <p id="heading-value">00</p>
+                    </div>
+                    <div  class="progress-bar" >
+                        <div id="pro-heading" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+
+                    <div class="cont">
+                        <p id="def-awareness">Def Awareness</p>
+                        <p id="def-awareness-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-def-awareness" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+
+                    <div class="cont">
+                        <p id="standing-tackle">Standing Tackle</p>
+                        <p id="standing-tackle-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-standing-tackle" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="sliding-tackle">Sliding Tackle</p>
+                        <p id="sliding-tackle-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-sliding-tackle" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                </div>
+
+                <div id="Physicality-card" class="card" >
+                    <div class="cont">
+                        <h2 id="physicality">Physicality</h2>
+                        <h2 id="physicality-value">00</h2>
+                    </div>
+                    <div class="cont">
+                        <p id="jumping">Jumping</p>
+                        <p id="jumping-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-jumping" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="stamina">Stamina</p>
+                        <p id="stamina-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-stamina" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="strength">Strength</p>
+                        <p id="strength-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-strength" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                    <div class="cont">
+                        <p id="aggression">Aggression</p>
+                        <p id="aggression-value">00</p>
+                    </div>
+                    
+                    <div  class="progress-bar" >
+                        <div id="pro-aggression" class="progress-bar-value" style=" width: 90%; height: 10px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
